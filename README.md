@@ -72,8 +72,6 @@ Calculator/
 ## Demo
 
 ![alt text](image.png)
-
-
 ---
 
 ## License
