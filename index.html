@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="calculator">
+        <form>
+            <input type="text" id="screen" readonly >
+        </form>
+        <div class="button">
+            <button type="button" class="btn btn-yellow" data-num="*" onclick="setOperator('*')">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/" onclick="setOperator('/')">/</button>
+            <button type="button" class="btn btn-yellow" data-num="-" onclick="setOperator('-')">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+" onclick="setOperator('+')">+</button>
+        
+            <button onclick="setValue(9)" type="button" class="btn btn-grey" data-num="9">9</button>
+            <button onclick="setValue(8)" type="button" class="btn btn-grey" data-num="8">8</button>
+            <button onclick="setValue(7)" type="button" class="btn btn-grey" data-num="7">7</button>
+            <button onclick="setValue(6)" type="button" class="btn btn-grey" data-num="6">6</button>
+            <button onclick="setValue(5)" type="button" class="btn btn-grey" data-num="5">5</button>
+            <button onclick="setValue(4)" type="button" class="btn btn-grey" data-num="4">4</button>
+            <button onclick="setValue(3)" type="button" class="btn btn-grey" data-num="3">3</button>
+            <button onclick="setValue(2)" type="button" class="btn btn-grey" data-num="2">2</button>
+            <button onclick="setValue(1)" type="button" class="btn btn-grey" data-num="1">1</button>
+            <button onclick="setValue(0)" type="button" class="btn btn-grey" data-num="0">0</button>
+            
+            <button onclick="setValue('.')" type="button" class="btn btn-grey" data-num=".">.</button>
+            
+            <button type="button" class="btn btn-equal" onclick="result()">=</button>
+            <button type="button" class="btn btn-clear" onclick="reset()">C</button>
+        </div>
+        
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
